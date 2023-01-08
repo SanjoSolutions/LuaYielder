@@ -37,8 +37,14 @@ function Yielder.createYielderWithTimeTracking(timePerRun)
     return resume(...)
   end
 
-  yielder.hasRanOutOfTime = function()
+  yielder.hasRunOutOfTime = function()
     return debugprofilestop() - start >= timePerRun
+  end
+
+  yielder.yieldAndResumeWhenHasRunOutOfTime = function ()
+    if self:hasRunOutOfTime() then
+      self:yield()
+    end
   end
 
   return yielder
