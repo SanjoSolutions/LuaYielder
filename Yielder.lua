@@ -42,8 +42,8 @@ function Yielder.createYielderWithTimeTracking(timePerRun)
   end
 
   yielder.yieldAndResumeWhenHasRunOutOfTime = function ()
-    if self:hasRunOutOfTime() then
-      self:yield()
+    if yielder:hasRunOutOfTime() then
+      yielder:yield()
     end
   end
 
