@@ -1,6 +1,6 @@
 # Yielder
 
-A library for making long-running processes work. This library can save add-on developers some work.
+A library for helping with yielding in long-running processes. This library can save add-on developers some work.
 
 ## Things included
 
