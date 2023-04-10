@@ -1,4 +1,5 @@
 ## Title: Yielder
 ## Interface: 100007
+## Version: 1.0.0
 
 Yielder.lua
